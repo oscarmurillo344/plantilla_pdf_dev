@@ -1,0 +1,11 @@
+<mat-toolbar class="Fixed" color="warn">
+    <button mat-icon-button>
+      <mat-icon>picture_as_pdf</mat-icon>
+    </button>
+    <span >Gestion de PDF</span>
+    <span class="posicion-icon"></span>
+    <span *ngIf="notificacion.notification" class="espacio"><mat-icon>account_circle</mat-icon> {{usuario}} </span>
+    <a mat-icon-button *ngIf="notificacion.notification" (click)="logout()" [routerLink]="['/login']">
+      <mat-icon>logout</mat-icon>
+    </a>
+</mat-toolbar>

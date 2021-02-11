@@ -1,0 +1,10 @@
+<a mat-mini-fab color="primary" class="atras" 
+    [routerLink]="['/listaPDF']"> 
+        <mat-icon>undo</mat-icon> 
+    </a>
+<pdf-viewer
+[src]="pdfstring"
+page="1"
+[render-text]="true"
+class="distancia">
+</pdf-viewer>    
